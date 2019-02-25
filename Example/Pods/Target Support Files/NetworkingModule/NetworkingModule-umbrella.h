@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "NetworkingModule.h"
 
 FOUNDATION_EXPORT double NetworkingModuleVersionNumber;
 FOUNDATION_EXPORT const unsigned char NetworkingModuleVersionString[];

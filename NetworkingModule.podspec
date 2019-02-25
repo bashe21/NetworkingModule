@@ -29,13 +29,14 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
-
+  # s.static_framework = true  # 导入头文件方式1
+  
   s.source_files = 'NetworkingModule/Classes/**/*'
   
   # s.resource_bundles = {
   #   'NetworkingModule' => ['NetworkingModule/Assets/*.png']
   # }
-
+  s.public_header_files = 'NetworkingModule/Classes/NetworkingModule.h' # 导入头文件方式2 注释掉该设置
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'AFNetworking', '~> 3.2.0'
